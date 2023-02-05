@@ -91,7 +91,7 @@ def display_menu():
     elif choice == "IoT":
         st.title("About Me")
         st.write("My name is Streamlit and I love to create web applications.")
-        chart_data = pd.read_csv('/Users/paulomonteiro/PycharmProjects/Portefolio2/Topicosbem.csv', sep=',')
+        chart_data = pd.read_csv('/Topicosbem.csv', sep=',')
         # Work with the dataframe
         st.dataframe(chart_data.head(15))
         columns = (['Length', 'Height', 'Width', 'Frequency', 'Word', ])
