@@ -16,7 +16,7 @@ hide_streamlit_style = """
     <style>
     #MainMenu {visibility: hidden;}
     footer {visibility: hidden;}
-    .stApp {background: transparent; position: relative; z-index: 1;}
+    .stApp {background: transparent; position: relative; z-index: -1;}
     .background {
         position: fixed;
         top: 0;
