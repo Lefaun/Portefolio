@@ -111,10 +111,11 @@ with st.sidebar:
 
 # Create the responsive menu
 
-
-st.markdown('<div class="foreground">', unsafe_allow_html=True)
-st.markdown(openprocessing_iframe, unsafe_allow_html=True)
 st.markdown(custom_css, unsafe_allow_html=True)
+st.markdown(openprocessing_iframe, unsafe_allow_html=True)
+st.markdown('<div class="foreground">', unsafe_allow_html=True)
+
+
 
 def display_menu():
     menu = ["Home", "About", "Art", "Design", "Video", "3D", "IoT", "Graphics"]
@@ -218,3 +219,4 @@ with col3:
 
 
 
+st.markdown('</div>', unsafe_html=True)
