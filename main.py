@@ -32,6 +32,35 @@ now=[]
 # Create a function to display the histogram of likes per day of the week
 st.title("                        O MEU PORTFOLIO")
 
+#Open Processing 2
+
+# Hide the default Streamlit style
+hide_streamlit_style = """
+    <style>
+    #MainMenu {visibility: hidden;}
+    footer {visibility: hidden;}
+    .stApp {background: transparent; position: relative; z-index: 1;}
+    .background {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        overflow: hidden;
+    }
+    </style>
+"""
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
+
+# Embed the OpenProcessing iframe as background
+openprocessing_iframe = """
+    <div class="background">
+        <iframe src="<iframe src="https://openprocessing.org/sketch/2275356/embed/" width="400" height="400">
+    </div>
+"""
+st.markdown(openprocessing_iframe, unsafe_allow_html=True)
+# Open Processing
 def main():
     st.set_page_config(page_title="O MEU PORTEFOLIO", page_icon=":guardsman:", layout="centered")
 
