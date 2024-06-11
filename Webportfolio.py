@@ -11,6 +11,33 @@ st.set_page_config(
     page_icon="🎨",
     layout="wide",
 )
+
+hide_streamlit_style = """
+    <style>
+    #MainMenu {visibility: hidden;}
+    footer {visibility: hidden;}
+    .stApp {background: transparent; position: relative; z-index: 1;}
+    .background {
+        position: fixed;
+        top: 0;
+        
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        overflow: hidden;
+    }
+    </style>
+"""
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
+
+openprocessing_iframe = """
+    <div class="background">
+       <iframe src="https://openprocessing.org/sketch/2275356/embed/" width="100%" height="100%"></iframe>
+    </div>
+"""
+st.markdown(openprocessing_iframe, unsafe_allow_html=True)
+
 #Open Processing 2
 
 # Hide the default Streamlit style
@@ -164,31 +191,6 @@ with col3:
    st.image("2.png")
    button_3 = st.button("Gosto", key="psy ")
 
-hide_streamlit_style = """
-    <style>
-    #MainMenu {visibility: hidden;}
-    footer {visibility: hidden;}
-    .stApp {background: transparent; position: relative; z-index: 1;}
-    .background {
-        position: fixed;
-        top: 0;
-        
-        left: 0;
-        height: 100%;
-        width: 100%;
-        z-index: -1;
-        overflow: hidden;
-    }
-    </style>
-"""
-st.markdown(hide_streamlit_style, unsafe_allow_html=True)
-
-openprocessing_iframe = """
-    <div class="background">
-       <iframe src="https://openprocessing.org/sketch/2275356/embed/" width="100%" height="100%"></iframe>
-    </div>
-"""
-st.markdown(openprocessing_iframe, unsafe_allow_html=True)
 
 
 
