@@ -31,6 +31,8 @@ custom_css = """
     .foreground {
         position: relative;
         z-index: 1;
+        background: rgba(255, 255, 255, 0.8); 
+        padding: 20px;
         
     }
     iframe {
