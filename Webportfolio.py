@@ -14,31 +14,7 @@ st.set_page_config(
 #Open Processing 2
 
 # Hide the default Streamlit style
-hide_streamlit_style = """
-    <style>
-    #MainMenu {visibility: hidden;}
-    footer {visibility: hidden;}
-    .stApp {background: transparent; position: relative; z-index: 1;}
-    .background {
-        position: fixed;
-        top: 0;
-        
-        left: 0;
-        height: 100%;
-        width: 100%;
-        z-index: -1;
-        overflow: hidden;
-    }
-    </style>
-"""
-st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
-openprocessing_iframe = """
-    <div class="background">
-       <iframe src="https://openprocessing.org/sketch/2275356/embed/" width="100%" height="100%"></iframe>
-    </div>
-"""
-st.markdown(openprocessing_iframe, unsafe_allow_html=True)
 
 image=[ {"name": "2.png", "likes": 0},{"name": "3.png", "likes": 0},{"name": "Sonia Monteiro Imobiliary.png", "likes": 0},{"name": "star.png", "likes": 0}]
 
@@ -187,5 +163,32 @@ with col3:
    st.header("ART")
    st.image("2.png")
    button_3 = st.button("Gosto", key="psy ")
+
+hide_streamlit_style = """
+    <style>
+    #MainMenu {visibility: hidden;}
+    footer {visibility: hidden;}
+    .stApp {background: transparent; position: relative; z-index: 1;}
+    .background {
+        position: fixed;
+        top: 0;
+        
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        overflow: hidden;
+    }
+    </style>
+"""
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
+
+openprocessing_iframe = """
+    <div class="background">
+       <iframe src="https://openprocessing.org/sketch/2275356/embed/" width="100%" height="100%"></iframe>
+    </div>
+"""
+st.markdown(openprocessing_iframe, unsafe_allow_html=True)
+
 
 
