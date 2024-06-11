@@ -6,11 +6,11 @@ import altair as alt
 import matplotlib as plt
 from collections import Counter
 # Streamlit layout configuration
-#st.set_page_config(
-    #page_title="OpenProcessing Background",
-    #page_icon="🎨",
-    #layout="wide",
-#)
+st.set_page_config(
+    page_title="OpenProcessing Background",
+    page_icon="🎨",
+    layout="wide",
+)
 #Open Processing 2
 
 # Hide the default Streamlit style
