@@ -24,11 +24,16 @@ custom_css = """
         left: 0;
         height: 100%;
         width: 100%;
-        z-index: 1;
+        z-index: -1;
         overflow: hidden;
         background: transparent;
     }
-    .iframe {
+    .foreground {
+        position: relative;
+        z-index: 1;
+        
+    }
+    iframe {
         position: fixed;
         top: 0;
         left: 0;
@@ -50,6 +55,7 @@ openprocessing_iframe = """
 #st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 st.markdown(openprocessing_iframe, unsafe_allow_html=True)
 st.markdown(custom_css, unsafe_allow_html=True)
+st.markdown('<div class="foreground">', unsafe_allow_html=True)
 
 st.title("                        O MEU PORTFOLIO")
 #Open Processing 2
