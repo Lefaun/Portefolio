@@ -55,7 +55,9 @@ openprocessing_iframe = """
 """
 #st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
-
+st.markdown(custom_css, unsafe_allow_html=True)
+st.markdown(openprocessing_iframe, unsafe_allow_html=True)
+st.markdown('<div class="foreground">', unsafe_allow_html=True)
 
 st.title("                        O MEU PORTFOLIO")
 #Open Processing 2
@@ -111,9 +113,7 @@ with st.sidebar:
 
 # Create the responsive menu
 
-st.markdown(custom_css, unsafe_allow_html=True)
-st.markdown(openprocessing_iframe, unsafe_allow_html=True)
-st.markdown('<div class="foreground">', unsafe_allow_html=True)
+
 
 
 
