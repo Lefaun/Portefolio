@@ -55,7 +55,7 @@ openprocessing_iframe = """
 #st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 st.markdown(openprocessing_iframe, unsafe_allow_html=True)
 st.markdown(custom_css, unsafe_allow_html=True)
-st.markdown('<div class="foreground">', unsafe_allow_html=True)
+
 
 st.title("                        O MEU PORTFOLIO")
 #Open Processing 2
@@ -95,7 +95,7 @@ st.title("                        O MEU PORTFOLIO")
 
 
 
-
+st.markdown('<div class="foreground">', unsafe_allow_html=True)
 def main():
     st.set_page_config(page_title="O MEU PORTEFOLIO", page_icon=":guardsman:", layout="centered")
 
