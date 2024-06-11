@@ -47,7 +47,7 @@ openprocessing_iframe = """
       <iframe src="https://openprocessing.org/sketch/2279313/embed/" style="border:0" width="100%" height="100%"></iframe>
     </div>
 """
-st.markdown(hide_streamlit_style, unsafe_allow_html=True)
+#st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 st.markdown(openprocessing_iframe, unsafe_allow_html=True)
 st.markdown(costum_css, unsafe_allow_html=True)
 
