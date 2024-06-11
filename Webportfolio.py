@@ -6,11 +6,39 @@ import altair as alt
 import matplotlib as plt
 from collections import Counter
 # Streamlit layout configuration
-st.set_page_config(
-    page_title="OpenProcessing Background",
-    page_icon="🎨",
-    layout="wide",
-)
+#st.set_page_config(
+    #page_title="OpenProcessing Background",
+    #page_icon="🎨",
+    #layout="wide",
+#)
+#Open Processing 2
+
+# Hide the default Streamlit style
+hide_streamlit_style = """
+    <style>
+    #MainMenu {visibility: hidden;}
+    footer {visibility: hidden;}
+    .stApp {background: transparent; position: relative; z-index: 1;}
+    .background {
+        position: fixed;
+        top: 0;
+        
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        overflow: hidden;
+    }
+    </style>
+"""
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
+
+openprocessing_iframe = """
+    <div class="background">
+       <iframe src="https://openprocessing.org/sketch/2275356/embed/" width="400" height="400"></iframe>
+    </div>
+"""
+st.markdown(openprocessing_iframe, unsafe_allow_html=True)
 
 image=[ {"name": "2.png", "likes": 0},{"name": "3.png", "likes": 0},{"name": "Sonia Monteiro Imobiliary.png", "likes": 0},{"name": "star.png", "likes": 0}]
 
@@ -42,26 +70,7 @@ st.title("                        O MEU PORTFOLIO")
 st.title("                        O MEU PORTFOLIO")
 
 
-#Open Processing 2
 
-# Hide the default Streamlit style
-hide_streamlit_style = """
-    <style>
-    #MainMenu {visibility: hidden;}
-    footer {visibility: hidden;}
-    .stApp {background: transparent; position: relative; z-index: 1;}
-    .background {
-        position: fixed;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-        z-index: -1;
-        overflow: hidden;
-    }
-    </style>
-"""
-st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
 
 def main():
