@@ -27,6 +27,11 @@ hide_streamlit_style = """
         z-index: -1;
         overflow: hidden;
     }
+    .foreground {
+        position: relative;
+        z-index: 1;
+        
+    }
     </style>
 """
 
@@ -38,6 +43,8 @@ openprocessing_iframe = """
 """
 st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 st.markdown(openprocessing_iframe, unsafe_allow_html=True)
+st.markdown('<div class= "foreground">', unsafe_allow_html=True)
+
 st.title("                        O MEU PORTFOLIO")
 #Open Processing 2
 
