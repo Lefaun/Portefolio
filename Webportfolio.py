@@ -219,4 +219,4 @@ with col3:
 
 
 
-st.markdown('</div>', unsafe_html=True)
+st.markdown('</div>', unsafe_allow_html=True)
