@@ -49,7 +49,7 @@ openprocessing_iframe = """
 """
 #st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 st.markdown(openprocessing_iframe, unsafe_allow_html=True)
-st.markdown(costum_css, unsafe_allow_html=True)
+st.markdown(custom_css, unsafe_allow_html=True)
 
 st.title("                        O MEU PORTFOLIO")
 #Open Processing 2
