@@ -53,8 +53,7 @@ openprocessing_iframe = """
     </div>
 """
 #st.markdown(hide_streamlit_style, unsafe_allow_html=True)
-st.markdown(openprocessing_iframe, unsafe_allow_html=True)
-st.markdown(custom_css, unsafe_allow_html=True)
+
 
 
 st.title("                        O MEU PORTFOLIO")
@@ -95,7 +94,7 @@ st.title("                        O MEU PORTFOLIO")
 
 
 
-st.markdown('<div class="foreground">', unsafe_allow_html=True)
+
 def main():
     st.set_page_config(page_title="O MEU PORTEFOLIO", page_icon=":guardsman:", layout="centered")
 
@@ -212,5 +211,7 @@ with col3:
    button_3 = st.button("Gosto", key="psy ")
 
 
-
+st.markdown('<div class="foreground">', unsafe_allow_html=True)
+st.markdown(openprocessing_iframe, unsafe_allow_html=True)
+st.markdown(custom_css, unsafe_allow_html=True)
 
