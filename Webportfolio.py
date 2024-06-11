@@ -16,7 +16,9 @@ custom_css = """
     <style>
     #MainMenu {visibility: hidden;}
     footer {visibility: hidden;}
-    .stApp {background: transparent; position: relative; z-index: -3;}
+    .stApp {background: transparent; position: relative; z-index: -1;}
+    }
+    .stApp {background: transparent;}
     .background {
         position: fixed;
         top: 0;
@@ -26,12 +28,9 @@ custom_css = """
         width: 100%;
         z-index: -1;
         overflow: hidden;
-        background: transparent;
-    }
     .foreground {
         position: relative;
         z-index: 1;
-        background: rgba(255, 255, 255, 0.8); 
         
     }
     .iframe {
@@ -40,6 +39,7 @@ custom_css = """
         left: 0;
         height: 100%;
         width: 100%;
+        border: none;
         z-index: -2;
     
         
