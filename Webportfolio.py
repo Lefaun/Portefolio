@@ -5,6 +5,12 @@ import numpy as np
 import altair as alt
 import matplotlib as plt
 from collections import Counter
+# Streamlit layout configuration
+st.set_page_config(
+    page_title="OpenProcessing Background",
+    page_icon="🎨",
+    layout="wide",
+)
 
 image=[ {"name": "2.png", "likes": 0},{"name": "3.png", "likes": 0},{"name": "Sonia Monteiro Imobiliary.png", "likes": 0},{"name": "star.png", "likes": 0}]
 
@@ -35,12 +41,7 @@ st.title("                        O MEU PORTFOLIO")
 
 st.title("                        O MEU PORTFOLIO")
 
-# Streamlit layout configuration
-st.set_page_config(
-    page_title="OpenProcessing Background",
-    page_icon="🎨",
-    layout="wide",
-)
+
 #Open Processing 2
 
 # Hide the default Streamlit style
