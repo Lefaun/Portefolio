@@ -32,7 +32,6 @@ custom_css = """
         position: relative;
         z-index: 1;
         background: rgba(255, 255, 255, 0.8); 
-        padding: 20px;
         
     }
     .iframe {
@@ -41,7 +40,7 @@ custom_css = """
         left: 0;
         height: 100%;
         width: 100%;
-        z-index: -1;
+        z-index: -2;
     
         
     }
