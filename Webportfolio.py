@@ -16,7 +16,7 @@ custom_css = """
     <style>
     #MainMenu {visibility: hidden;}
     footer {visibility: hidden;}
-    .stApp {background: transparent; position: relative; z-index: -1;}
+    .stApp {background: transparent; position: relative; z-index: -3;}
     .background {
         position: fixed;
         top: 0;
