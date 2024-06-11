@@ -33,7 +33,7 @@ custom_css = """
         z-index: 1;
         
     }
-    .iframe {
+    iframe {
         position: fixed;
         top: 0;
         left: 0;
