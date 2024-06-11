@@ -12,7 +12,7 @@ st.set_page_config(
     layout="wide",
 )
 
-hide_streamlit_style = """
+custom_css = """
     <style>
     #MainMenu {visibility: hidden;}
     footer {visibility: hidden;}
@@ -26,10 +26,16 @@ hide_streamlit_style = """
         width: 100%;
         z-index: -1;
         overflow: hidden;
+        background: transparent;
     }
-    .foreground {
-        position: relative;
-        z-index: 1;
+    .iframe {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+    
         
     }
     </style>
@@ -43,7 +49,7 @@ openprocessing_iframe = """
 """
 st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 st.markdown(openprocessing_iframe, unsafe_allow_html=True)
-st.markdown('<div class= "foreground">', unsafe_allow_html=True)
+st.markdown(costum_css, unsafe_allow_html=True)
 
 st.title("                        O MEU PORTFOLIO")
 #Open Processing 2
