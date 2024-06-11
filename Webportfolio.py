@@ -35,6 +35,12 @@ st.title("                        O MEU PORTFOLIO")
 
 st.title("                        O MEU PORTFOLIO")
 
+# Streamlit layout configuration
+st.set_page_config(
+    page_title="OpenProcessing Background",
+    page_icon="🎨",
+    layout="wide",
+)
 #Open Processing 2
 
 # Hide the default Streamlit style
